@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Libros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Libros</h1>
+        <div id="loginForm">
+            <input type="text" id="username" placeholder="Nombre de usuario">
+            <button onclick="login()">Iniciar Sesión</button>
+        </div>
+        <div id="bookForm" style="display: none;">
+            <input type="text" id="bookInput" placeholder="Ingresa el nombre del libro">
+            <button onclick="addBook()">Agregar</button>
+            <ul id="bookList"></ul>
+            <button onclick="chooseRandomBook()">Elegir Libro al Azar</button>
+            <button onclick="saveBooks()">Guardar Libros</button>
+            <p id="randomBook"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
